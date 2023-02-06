@@ -446,3 +446,201 @@ DELETE
   }
 }
 ```
+## Student
+## Create
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/student/create
+```
+#### Method
+```
+POST
+```
+#### Payload
+```
+{ "anganwadi_id":"dsf",
+ "f_name":"dsf",
+ "m_name":"sdf",
+ "l_name":"dsff",
+ "mother_name":"sdfsd",
+ "father_name":"dsfs",
+ "dob":"2000-11-12",
+ "gender":"male",
+ "join_date":"2000-11-12",
+ "pass_date":"2000-11-12",
+ "join_photo":"aslk.jpeg",
+ "pass_photo":"sad;lk.jpeg",
+ "state_id":"123",
+ "dist_id":"123",
+ "taluka_id":"123",
+ "grampanchayt_id":"123",
+ "village_id":"123",
+ "zip_code":"123"}
+```
+#### Response
+```
+{
+  "status": 200,
+  "data": {
+    "id": "2",
+    "anganwadi_id": "0",
+    "f_name": "dsf",
+    "m_name": "sdf",
+    "l_name": "dsff",
+    "mother_name": "sdfsd",
+    "father_name": "dsfs",
+    "dob": "2000-11-12",
+    "gender": "0",
+    "join_date": "2000-11-12",
+    "pass_date": "2000-11-12",
+    "join_photo": "aslk.jpeg",
+    "pass_photo": "sad;lk.jpeg",
+    "state_id": "123",
+    "dist_id": "123",
+    "taluka_id": "123",
+    "grampanchayt_id": "123",
+    "village_id": "123",
+    "zip_code": "123"
+  },
+  "error": null
+}
+```
+## List All
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/students/listAll
+```
+#### Method
+```
+GET
+```
+#### Response
+```
+{
+  "status": 200,
+  "data": [
+    {
+      "id": "2",
+      "anganwadi_id": "0",
+      "f_name": "dsf",
+      "m_name": "sdf",
+      "l_name": "dsff",
+      "mother_name": "sdfsd",
+      "father_name": "dsfs",
+      "dob": "2000-11-12",
+      "gender": "0",
+      "join_date": "2000-11-12",
+      "pass_date": "2000-11-12",
+      "join_photo": "aslk.jpeg",
+      "pass_photo": "sad;lk.jpeg",
+      "state_id": "123",
+      "dist_id": "123",
+      "taluka_id": "123",
+      "grampanchayt_id": "123",
+      "village_id": "123",
+      "zip_code": "123"
+    }
+  ],
+  "error": null
+}
+```
+## Read
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/student/{id}
+```
+#### Method
+```
+GET
+```
+
+#### Response
+```
+{
+  "status": 200,
+  "data": {
+    "id": "2",
+    "anganwadi_id": "0",
+    "f_name": "dsf",
+    "m_name": "sdf",
+    "l_name": "dsff",
+    "mother_name": "sdfsd",
+    "father_name": "dsfs",
+    "dob": "2000-11-12",
+    "gender": "0",
+    "join_date": "2000-11-12",
+    "pass_date": "2000-11-12",
+    "join_photo": "aslk.jpeg",
+    "pass_photo": "sad;lk.jpeg",
+    "state_id": "123",
+    "dist_id": "123",
+    "taluka_id": "123",
+    "grampanchayt_id": "123",
+    "village_id": "123",
+    "zip_code": "123"
+  },
+  "error": null
+}
+```
+## Update
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/student/update/{id}
+```
+#### Method
+```
+PATCH
+```
+#### Payload
+```
+{
+    "f_name":"askj"
+}
+```
+#### Response
+```
+{
+  "status": 200,
+  "data": {
+    "id": "2",
+    "anganwadi_id": "0",
+    "f_name": "askj",
+    "m_name": "sdf",
+    "l_name": "dsff",
+    "mother_name": "sdfsd",
+    "father_name": "dsfs",
+    "dob": "2000-11-12",
+    "gender": "0",
+    "join_date": "2000-11-12",
+    "pass_date": "2000-11-12",
+    "join_photo": "aslk.jpeg",
+    "pass_photo": "sad;lk.jpeg",
+    "state_id": "123",
+    "dist_id": "123",
+    "taluka_id": "123",
+    "grampanchayt_id": "123",
+    "village_id": "123",
+    "zip_code": "123"
+  },
+  "error": null
+}
+```
+## Delete
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/student/delete/{id}
+```
+#### Method
+```
+DELETE
+```
+#### Response
+```
+{
+  "status": 200,
+  "error": null,
+  "messages": {
+    "response": "Record successfully deleted"
+  }
+}
+```
