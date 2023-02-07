@@ -843,3 +843,202 @@ DELETE
     }
 }
 ```
+## Users
+## List All
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/users/listAll
+```
+#### Method
+```
+GET
+```
+#### Response
+```
+{
+    "status": 200,
+    "data": [
+        {
+            "id": "3",
+            "role_id": "0",
+            "password": "",
+            "f_name": "",
+            "m_name": "",
+            "l_name": "",
+            "email": "",
+            "contact_no": "",
+            "state": "0",
+            "district": "0",
+            "block": "0",
+            "village": "0",
+            "zip_code": "8867"
+        },
+        {
+            "id": "2",
+            "role_id": "123",
+            "password": "234",
+            "f_name": "aasf",
+            "m_name": "dfas",
+            "l_name": "",
+            "email": "sadf",
+            "contact_no": "234",
+            "state": "234",
+            "district": "3245",
+            "block": "345",
+            "village": "2345",
+            "zip_code": "2345"
+        },
+        {
+            "id": "1",
+            "role_id": "123",
+            "password": "234",
+            "f_name": "aasf",
+            "m_name": "dfas",
+            "l_name": "",
+            "email": "sadf",
+            "contact_no": "234",
+            "state": "234",
+            "district": "3245",
+            "block": "345",
+            "village": "2345",
+            "zip_code": "2345"
+        }
+    ],
+    "error": null
+}
+```
+## Create
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/user/create
+```
+#### Method
+```
+POST
+```
+#### Payload
+```
+{
+    "role_id": "2",
+    "password": "fwfe",
+    "f_name": "ewfef",
+    "m_name": "wefewf",
+    "l_name": "asfdfwe",
+    "email": "xyz@gmail.com",
+    "contact_no": 12345678798,
+    "state": "3",
+    "district": "3",
+    "block": "5",
+    "village": "5",
+    "zip_code": "5657"
+}
+```
+#### Response
+```
+{
+    "status": "200",
+    "data": {
+        "id": "4",
+        "role_id": "2",
+        "password": "fwfe",
+        "f_name": "ewfef",
+        "m_name": "wefewf",
+        "l_name": "asfdfwe",
+        "email": "xyz@gmail.com",
+        "contact_no": "12345678798",
+        "state": "0",
+        "district": "0",
+        "block": "0",
+        "village": "0",
+        "zip_code": "5657"
+    },
+    "message": "Record inserted successfully"
+}
+```
+## Read
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/user/{id}
+```
+#### Method
+```
+GET
+```
+#### Response
+```
+{
+    "status": 200,
+    "message": "Record fetched successfully",
+    "data": {
+        "id": "4",
+        "role_id": "2",
+        "password": "fwfe",
+        "f_name": "ewfef",
+        "m_name": "wefewf",
+        "l_name": "asfdfwe",
+        "email": "xyz@gmail.com",
+        "contact_no": "12345678798",
+        "state": "0",
+        "district": "0",
+        "block": "0",
+        "village": "0",
+        "zip_code": "5657"
+    }
+}
+```
+## Update
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/user/update/{id}
+```
+#### Method
+```
+PATCH
+```
+#### Payload
+```
+{
+    "role_id": "4"
+}
+```
+#### Response
+```
+{
+    "status": 200,
+    "message": "Record fetched successfully",
+    "data": {
+        "id": "4",
+        "role_id": "4",
+        "password": "fwfe",
+        "f_name": "ewfef",
+        "m_name": "wefewf",
+        "l_name": "asfdfwe",
+        "email": "xyz@gmail.com",
+        "contact_no": "12345678798",
+        "state": "0",
+        "district": "0",
+        "block": "0",
+        "village": "0",
+        "zip_code": "5657"
+    }
+}
+```
+## Delete
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/user/delete/{id}
+```
+#### Method
+```
+DELETE
+```
+#### Response
+```
+{
+    "status": 200,
+    "error": null,
+    "messages": {
+        "response": "Record successfully deleted"
+    }
+}
+```
