@@ -644,3 +644,202 @@ DELETE
   }
 }
 ```
+## Anganwadi Users
+#### Create
+#### URL
+```
+https://kitintellect.tech/api_anganwadi/public/anganwadi_user
+```
+#### Method
+```
+POST
+```
+#### Payload
+```
+{
+    "anganwadi_id": "156",
+    "f_name": "abcd",
+    "m_name": "abcde",
+    "l_name": "fhjewf",
+    "email": "abc1@gmail.com",
+    "contact_no": "1234567890",
+    "state_id": "0",
+    "dist_id": "0",
+    "taluka_id": "0",
+    "grampanchayat_id": "0",
+    "village_id": "0",
+    "zip_code": "123445"
+}
+```
+#### Response
+```
+{
+    "status": 200,
+    "data": {
+        "id": "4",
+        "anganwadi_id": "156",
+        "f_name": "abcd",
+        "m_name": "abcde",
+        "l_name": "fhjewf",
+        "email": "abc1@gmail.com",
+        "contact_no": "1234567890",
+        "state_id": "0",
+        "dist_id": "0",
+        "taluka_id": "0",
+        "grampanchayat_id": "0",
+        "village_id": "0",
+        "zip_code": "123445"
+    },
+    "error": null
+}
+```
+## List All
+####  URL
+```
+https://kitintellect.tech/api_anganwadi/public/anganwadi_user
+```
+#### Method
+```
+GET
+```
+#### Response
+```
+{
+    "status": 200,
+    "data": [
+        {
+            "id": "4",
+            "anganwadi_id": "156",
+            "f_name": "abcd",
+            "m_name": "abcde",
+            "l_name": "fhjewf",
+            "email": "abc1@gmail.com",
+            "contact_no": "1234567890",
+            "state_id": "0",
+            "dist_id": "0",
+            "taluka_id": "0",
+            "grampanchayat_id": "0",
+            "village_id": "0",
+            "zip_code": "123445"
+        },
+        {
+            "id": "3",
+            "anganwadi_id": "156",
+            "f_name": "abcd",
+            "m_name": "abcde",
+            "l_name": "fhjewf",
+            "email": "abc1@gmail.com",
+            "contact_no": "1234567890",
+            "state_id": "0",
+            "dist_id": "0",
+            "taluka_id": "0",
+            "grampanchayat_id": "0",
+            "village_id": "0",
+            "zip_code": "123445"
+        },
+        {
+            "id": "2",
+            "anganwadi_id": "123",
+            "f_name": "abc",
+            "m_name": "abcd",
+            "l_name": "xyz",
+            "email": "abc@gmail.com",
+            "contact_no": "1234567890",
+            "state_id": "0",
+            "dist_id": "0",
+            "taluka_id": "0",
+            "grampanchayat_id": "0",
+            "village_id": "0",
+            "zip_code": "123456"
+        }
+    ],
+    "error": null
+}
+```
+## Read
+####  URL
+```
+https://kitintellect.tech/api_anganwadi/public/anganwadi_user/{id}
+```
+#### Method
+```
+GET
+```
+#### Response
+```
+{
+    "status": 200,
+    "data": {
+        "id": "4",
+        "anganwadi_id": "156",
+        "f_name": "abcd",
+        "m_name": "abcde",
+        "l_name": "fhjewf",
+        "email": "abc1@gmail.com",
+        "contact_no": "1234567890",
+        "state_id": "0",
+        "dist_id": "0",
+        "taluka_id": "0",
+        "grampanchayat_id": "0",
+        "village_id": "0",
+        "zip_code": "123445"
+    },
+    "error": null
+}
+```
+## Update
+####  URL
+```
+https://kitintellect.tech/api_anganwadi/public/anganwadi_user/{id}
+```
+#### Method
+```
+PATCH
+```
+#### Payload
+```
+{
+    "anganwadi_id":156   
+}
+```
+#### Response
+```
+{
+    "status": 200,
+    "data": {
+        "id": "3",
+        "anganwadi_id": "156",
+        "f_name": "abcd",
+        "m_name": "abcde",
+        "l_name": "fhjewf",
+        "email": "abc1@gmail.com",
+        "contact_no": "1234567890",
+        "state_id": "0",
+        "dist_id": "0",
+        "taluka_id": "0",
+        "grampanchayat_id": "0",
+        "village_id": "0",
+        "zip_code": "123445"
+    },
+    "error": null
+}
+```
+## Delete
+####  URL
+```
+https://kitintellect.tech/api_anganwadi/public/anganwadi_user/{id}
+```
+#### Method
+```
+DELETE
+```
+#### Response
+```
+{
+    "status": 200,
+    "error": null,
+    "messages": {
+        "response": "Record successfully deleted"
+    }
+}
+```
